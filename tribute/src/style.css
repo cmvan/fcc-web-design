@@ -1,0 +1,166 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background: linear-gradient(
+    125deg,
+    #fab6d3,
+    #fcc89b,
+    #fbfcae,
+    #b4f7af,
+    #acb2f6,
+    #f0acf6,
+    #fab6d3
+  );
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+#title {
+  font-size: 4rem;
+  font-family: "Pacifico", cursive;
+  margin-bottom: -3rem;
+}
+
+#subheading {
+  font-size: 3rem;
+  font-style: oblique;
+  margin-bottom: 1rem;
+  font-family: "Pacifico", cursive;
+}
+
+#image {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5), 0px 6px 6px rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+  display: block;
+  float: center;
+  margin: auto;
+}
+
+#img-caption {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  max-width: 80%;
+  margin: 3rem auto 0 auto;
+}
+
+#intro {
+  max-width: 80%;
+  font-size: 1.5rem;
+  margin: 2rem auto;
+  line-height: 1.5;
+}
+
+.tab {
+  overflow: hidden;
+  border: 0px solid #ff5fa2;
+  background-color: linear-gradient(
+    125deg,
+    #fab6d3,
+    #fcc89b,
+    #fbfcae,
+    #b4f7af,
+    #acb2f6,
+    #f0acf6,
+    #fab6d3
+  );
+}
+
+.tab button {
+  background-color: #ff5fa2;
+  float: none;
+  outline: none;
+  border: inherit;
+  cursor: pointer;
+  padding: 1.5rem 1.5rem;
+  transition: 0.4s;
+  font-family: "Montserrat", sans serif;
+}
+
+.tab button:hover {
+  background-color: #fab6d3;
+}
+
+.tab button.active {
+  background-color: #fcc89b;
+}
+
+.tabcontent {
+  display: none;
+  max-width: 80%;
+  margin: auto;
+}
+
+#tribute-info {
+  background-color: #fcc89b;
+  border: 1px solid #fcc89b;
+  max-width: 100%;
+  margin: auto;
+}
+
+#tribute-info2 {
+  background-color: #fcc89b;
+  border: 0.1rem solid #fcc89b;
+  max-width: 100%;
+  margin: auto;
+}
+
+table,
+th,
+td {
+  border: 0.1rem solid black;
+  font-size: 1.5rem;
+  background: #fcc89b;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+.awards-list {
+  max-width: 95%;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+#end {
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+#links {
+  margin-top: 3rem;
+  font-size: 3rem;
+}
+
+.fa {
+  padding: 1.5rem;
+  width: 3rem;
+  text-align: center;
+  text-decoration: none;
+  margin: -3rem 1rem 0rem 1rem;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}

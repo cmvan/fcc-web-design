@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen -  MooMoo Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+</script>
+<div class="container">
+  <header class="header">
+    <h1 id="title"> The Official MooMoo Informative Survey</h1>
+    <p id="description">
+      This survey will provide RBW Entertainment a broader perspective of how MooMoos (fans of the KPop girl group MAMAMOO) view their current management of MAMAMOO and highlight areas of improvement. Please refrain from writing inappropriate, defamatory responses towards MAMAMOO as those <strong>will</strong> incur legal action from RBW Entertainment.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Please enter your name" required />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Please enter your email" required />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age<span class="clue"> (optional) </span></label>
+      <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Please enter your age" />
+    </div>
+    <div class="form-group">
+      <p>To which gender identify do you most identify?</p>
+      <label>
+        <input name="gender" value="female" type="radio" class="input-radio" />Female</label>
+      <label>
+        <input name="gender" value="male" type="radio" class="input-radio" />Male</label>
+      <label><input name="gender" value="transfem" type="radio" class="input-radio" />Transgender Female</label>
+      <label><input name="gender" value="transmal" type="radio" class="input-radio" />Transgender Male</label>
+      <label><input name="gender" value="nonconf" type="radio" class="input-radio" />Gender Variant/Nonconforming</label>
+      <label><input name="gender" value="nl" type="radio" class="input-radio" />Not Listed <input type="text" class="othertext"></label>
+      <label><input name="gender" value="noAns" type="radio" class="input-radio" />Prefer Not to Answer</label>
+    </div>
+    <div class="form-group">
+      <p>How long have you been a MooMoo?</p>
+      <select id="dropdown" name="fanYears" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Less1">Less than 1 year</option>
+        <option value="1-2">1 to 2 years</option>
+        <option value="2-3">2 to 3 years</option>
+        <option value="3-4">3 to 4 years</option>
+        <option value="4-5">4 to 5 years</option>
+        <option value="debut">Since their debut</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>What aspects of MAMAMOO do you find satisfactory or exemplary? <span class="clue">(Check all that apply)</span></p>
+      <label><input name="love" value="vocals" type="checkbox" class="input-checkbox" />Vocals</label>
+      <label><input name="love" value="dancing" type="checkbox" class="input-checkbox" />Dancing</label>
+      <label><input name="love" value="rapping" type="checkbox" class="input-checkbox" />Rapping</label>
+      <label><input name="love" value="stage-presence" type="checkbox" class="input-checkbox" />Stage Presence</label>
+      <label><input name="love" value="special" type="checkbox" class="input-checkbox" />Special Group Performances</label>
+      <label><input name="love" value="solo" type="checkbox" class="input-checkbox" />Solo Releases <input type="text" class="othertext" placeholder="Which Member(s)"></label>
+      <label><input name="love" value="collab" type="checkbox" class="input-checkbox" />Collaborations</label>
+      <label><input name="love" value="variety" type="checkbox" class="input-checkbox" />Variety Show Appearances</label>
+      <label><input name="love" value="personalities" type="checkbox" class="input-checkbox" />Personalities</label>
+      <label><input name="love" value="other" type="checkbox" class="input-checkbox" />Other<input type="text" class="othertext" placeholder="Explain Here"></label>
+    </div>
+    <div class="form-group">
+      <p>Please elaborate on why you selected the option(s) in the previous question</p>
+      <textarea id="elab1" class="input-textarea" name="elab1" placeholder="Please elaborate"></textarea>
+    </div>
+    <div class="form-group">
+      <p>What aspects of MAMAMOO do you find there can be more improvement? <span class="clue">(Check all that apply)</span></p>
+      <label><input name="love" value="vocals" type="checkbox" class="input-checkbox" />Vocals</label>
+      <label><input name="love" value="dancing" type="checkbox" class="input-checkbox" />Dancing</label>
+      <label><input name="love" value="rapping" type="checkbox" class="input-checkbox" />Rapping</label>
+      <label><input name="love" value="stage-presence" type="checkbox" class="input-checkbox" />Stage Presence</label>
+      <label><input name="love" value="special" type="checkbox" class="input-checkbox" />Special Group Performances</label>
+      <label><input name="love" value="solo" type="checkbox" class="input-checkbox" />Solo Releases<input type="text" class="othertext" placeholder="Which Member(s)"></label>
+      <label><input name="love" value="collab" type="checkbox" class="input-checkbox" />Collaborations</label>
+      <label><input name="love" value="variety" type="checkbox" class="input-checkbox" />Variety Show Appearances</label>
+      <label><input name="love" value="personalities" type="checkbox" class="input-checkbox" />Personalities</label>
+      <label><input name="love" value="other" type="checkbox" class="input-checkbox" />Other<input type="text" class="othertext" placeholder="Explain Here"></label>
+    </div>
+    <div class="form-group">
+      <p>Please elaborate on why you selected the option(s) in the previous question</p>
+      <textarea id="elab2" class="input-textarea" name="elab2" placeholder="Please elaborate"></textarea>
+    </div>
+    <div class="form-group">
+      <p>Please provide any additional comments and/or suggestions you have to improve any aspect of MAMAMOO and/or RBW's management of MAMAMOO</p>
+      <textarea id="improve" class="input-textarea" name="improve" placeholder="Please enter your suggestions"></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
